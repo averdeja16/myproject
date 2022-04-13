@@ -1,0 +1,15 @@
+---
+title: "first-analysis"
+author: "averdeja16"
+date: "2022-04-13"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+# Welcome to my analysis page
+```{r Car Plot, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+plot(cars)
+```
+
