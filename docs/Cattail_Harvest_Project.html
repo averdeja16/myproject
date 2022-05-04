@@ -377,7 +377,7 @@ div.tocify {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -386,7 +386,7 @@ div.tocify {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -395,10 +395,10 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2022-04-13
+<strong>Last updated:</strong> 2022-05-04
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>myproject/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -414,12 +414,12 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </div>
 </div>
 </div>
@@ -486,16 +486,16 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree6ed735c799cfa0716403cefb0813870febb8a4a6targetblank6ed735ca"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/averdeja16/myproject/tree/6ed735c799cfa0716403cefb0813870febb8a4a6" target="_blank">6ed735c</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree3477fc1ec24ac75983c4f558b4e68dc5f44860cctargetblank3477fc1a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/averdeja16/myproject/tree/3477fc1ec24ac75983c4f558b4e68dc5f44860cc" target="_blank">3477fc1</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree6ed735c799cfa0716403cefb0813870febb8a4a6targetblank6ed735ca" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree3477fc1ec24ac75983c4f558b4e68dc5f44860cctargetblank3477fc1a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/averdeja16/myproject/tree/6ed735c799cfa0716403cefb0813870febb8a4a6" target="_blank">6ed735c</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/averdeja16/myproject/tree/3477fc1ec24ac75983c4f558b4e68dc5f44860cc" target="_blank">3477fc1</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -504,12 +504,6 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-
-Untracked files:
-    Untracked:  analysis/Cattail_Harvest_Project.Rmd
-
-Unstaged changes:
-    Modified:   analysis/_site.yml
 
 </code></pre>
 <p>
@@ -522,9 +516,86 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <hr>
 </div>
 <div id="versions" class="tab-pane fade">
+
 <p>
-There are no past versions. Publish this analysis with <code>wflow_publish()</code> to start tracking its development.
+These are the previous versions of the repository in which changes were made to the R Markdown (<code>analysis/Cattail_Harvest_Project.Rmd</code>) and HTML (<code>docs/Cattail_Harvest_Project.html</code>) files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view the files as they were in that past version.
 </p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/averdeja16/myproject/blob/3477fc1ec24ac75983c4f558b4e68dc5f44860cc/analysis/Cattail_Harvest_Project.Rmd" target="_blank">3477fc1</a>
+</td>
+<td>
+Jane
+</td>
+<td>
+2022-05-04
+</td>
+<td>
+Changes to Cattail Harvest Page
+</td>
+</tr>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/averdeja16/myproject/blob/ce1080027cdca0c2f449e99b91de512ce3d82085/analysis/Cattail_Harvest_Project.Rmd" target="_blank">ce10800</a>
+</td>
+<td>
+Jane
+</td>
+<td>
+2022-05-04
+</td>
+<td>
+Ammounium Graphs
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/averdeja16/myproject/ce1080027cdca0c2f449e99b91de512ce3d82085/docs/Cattail_Harvest_Project.html" target="_blank">ce10800</a>
+</td>
+<td>
+Jane
+</td>
+<td>
+2022-05-04
+</td>
+<td>
+Ammounium Graphs
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr>
 </div>
 </div>
@@ -533,54 +604,7 @@ There are no past versions. Publish this analysis with <code>wflow_publish()</co
 <h2>Introduction</h2>
 <div id="this-project-focused-on-influencing-farmers-to-implent-harvested-cattails-to-their-soil-as-fertilizer.-this-project-is-meant-to-reduce-the-amount-of-invasive-cattails-as-well-as-reduce-the-nutrient-load-that-goes-into-the-saginaw-bay-watershed.-this-figure-presents-the-effects-that-different-treatments-have-on-ammonium-levels." class="section level3">
 <h3>This project focused on influencing farmers to implent harvested cattails to their soil as fertilizer. This project is meant to reduce the amount of invasive cattails as well as reduce the nutrient load that goes into the Saginaw Bay Watershed. This figure presents the effects that different treatments have on ammonium levels.</h3>
-<pre><code># A tibble: 70 x 9
-   Sample_ID trt2        trt month month_trt Year    Half Treatment_Type   PPM
-   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;
- 1 A1        Treatment     1     0         0 2017_1     1 NH4N_KCl        10.6
- 2 A2        Treatment     1     0         0 2017_1     1 NH4N_KCl        16.9
- 3 A3        Treatment     1     0         0 2017_1     1 NH4N_KCl        17.3
- 4 A4        Treatment     1     0         0 2017_1     1 NH4N_KCl        13.9
- 5 A5        Treatment     1     0         0 2017_1     1 NH4N_KCl        11.9
- 6 B1        Treatment     1     0         0 2017_1     1 NH4N_KCl        27.2
- 7 B2        Treatment     1     0         0 2017_1     1 NH4N_KCl        21.2
- 8 B3        Treatment     1     0         0 2017_1     1 NH4N_KCl        20.3
- 9 B4        Treatment     1     0         0 2017_1     1 NH4N_KCl        16.3
-10 B5        Treatment     1     0         0 2017_1     1 NH4N_KCl        17.8
-# ... with 60 more rows</code></pre>
-<pre><code># A tibble: 70 x 9
-   Sample_ID trt2        trt month month_trt Year    Half Treatment_Type   PPM
-   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;
- 1 A1        Treatment     1     0         0 2017_1     1 NH4N_H3A        25.9
- 2 A2        Treatment     1     0         0 2017_1     1 NH4N_H3A        20.8
- 3 A3        Treatment     1     0         0 2017_1     1 NH4N_H3A        23.4
- 4 A4        Treatment     1     0         0 2017_1     1 NH4N_H3A        20.1
- 5 A5        Treatment     1     0         0 2017_1     1 NH4N_H3A        33.7
- 6 B1        Treatment     1     0         0 2017_1     1 NH4N_H3A        13.6
- 7 B2        Treatment     1     0         0 2017_1     1 NH4N_H3A        13.2
- 8 B3        Treatment     1     0         0 2017_1     1 NH4N_H3A        18.9
- 9 B4        Treatment     1     0         0 2017_1     1 NH4N_H3A        26.2
-10 B5        Treatment     1     0         0 2017_1     1 NH4N_H3A        37  
-# ... with 60 more rows</code></pre>
-<pre><code># A tibble: 70 x 9
-   Sample_ID trt2        trt month month_trt Year    Half Treatment_Type   PPM
-   &lt;chr&gt;     &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt;          &lt;dbl&gt;
- 1 A1        Treatment     1     0         0 2017_1     1 NH4N_HW         6.68
- 2 A2        Treatment     1     0         0 2017_1     1 NH4N_HW         4.08
- 3 A3        Treatment     1     0         0 2017_1     1 NH4N_HW         4.63
- 4 A4        Treatment     1     0         0 2017_1     1 NH4N_HW         4.89
- 5 A5        Treatment     1     0         0 2017_1     1 NH4N_HW         5.42
- 6 B1        Treatment     1     0         0 2017_1     1 NH4N_HW         5.34
- 7 B2        Treatment     1     0         0 2017_1     1 NH4N_HW         4.23
- 8 B3        Treatment     1     0         0 2017_1     1 NH4N_HW         4.75
- 9 B4        Treatment     1     0         0 2017_1     1 NH4N_HW         4.58
-10 B5        Treatment     1     0         0 2017_1     1 NH4N_HW         7.01
-# ... with 60 more rows</code></pre>
-<pre><code>function (data = NULL, mapping = aes(), ..., environment = parent.frame()) 
-{
-    UseMethod(&quot;ggplot&quot;)
-}
-&lt;bytecode: 0x000000001c20a560&gt;
-&lt;environment: namespace:ggplot2&gt;</code></pre>
+<p><img src="figure/Cattail_Harvest_Project.Rmd/Treatment%20Tables-1.png" width="672" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -607,27 +631,29 @@ attached base packages:
 
 other attached packages:
 [1] forcats_0.5.1   stringr_1.4.0   purrr_0.3.4     tidyr_1.2.0    
-[5] tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.3.1 dplyr_1.0.8    
+[5] tibble_3.1.6    tidyverse_1.3.1 ggplot2_3.3.5   dplyr_1.0.8    
 [9] readr_2.1.2    
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.8.3     lubridate_1.8.0  assertthat_0.2.1 rprojroot_2.0.2 
- [5] digest_0.6.29    utf8_1.2.2       R6_2.5.1         cellranger_1.1.0
- [9] backports_1.4.1  reprex_2.0.1     evaluate_0.15    httr_1.4.2      
-[13] pillar_1.7.0     rlang_1.0.2      readxl_1.4.0     rstudioapi_0.13 
-[17] jquerylib_0.1.4  rmarkdown_2.13   bit_4.0.4        munsell_0.5.0   
-[21] broom_0.7.12     compiler_4.0.5   httpuv_1.6.5     modelr_0.1.8    
-[25] xfun_0.30        pkgconfig_2.0.3  htmltools_0.5.2  tidyselect_1.1.2
-[29] workflowr_1.7.0  fansi_1.0.3      withr_2.5.0      crayon_1.5.1    
-[33] tzdb_0.3.0       dbplyr_2.1.1     later_1.3.0      grid_4.0.5      
-[37] jsonlite_1.8.0   gtable_0.3.0     lifecycle_1.0.1  DBI_1.1.2       
-[41] git2r_0.30.1     magrittr_2.0.2   scales_1.1.1     cli_3.2.0       
-[45] stringi_1.7.6    vroom_1.5.7      fs_1.5.2         promises_1.2.0.1
-[49] xml2_1.3.3       bslib_0.3.1      ellipsis_0.3.2   generics_0.1.2  
-[53] vctrs_0.3.8      tools_4.0.5      bit64_4.0.5      glue_1.6.2      
-[57] hms_1.1.1        parallel_4.0.5   fastmap_1.1.0    yaml_2.3.5      
-[61] colorspace_2.0-3 rvest_1.0.2      knitr_1.38       haven_2.4.3     
-[65] sass_0.4.1      </code></pre>
+ [1] Rcpp_1.0.8.3     lattice_0.20-45  lubridate_1.8.0  assertthat_0.2.1
+ [5] rprojroot_2.0.2  digest_0.6.29    utf8_1.2.2       R6_2.5.1        
+ [9] cellranger_1.1.0 backports_1.4.1  reprex_2.0.1     evaluate_0.15   
+[13] highr_0.9        httr_1.4.2       pillar_1.7.0     rlang_1.0.2     
+[17] readxl_1.4.0     rstudioapi_0.13  whisker_0.4      jquerylib_0.1.4 
+[21] Matrix_1.3-2     rmarkdown_2.13   labeling_0.4.2   splines_4.0.5   
+[25] bit_4.0.4        munsell_0.5.0    broom_0.7.12     compiler_4.0.5  
+[29] httpuv_1.6.5     modelr_0.1.8     xfun_0.30        pkgconfig_2.0.3 
+[33] mgcv_1.8-34      htmltools_0.5.2  tidyselect_1.1.2 workflowr_1.7.0 
+[37] fansi_1.0.3      crayon_1.5.1     tzdb_0.3.0       dbplyr_2.1.1    
+[41] withr_2.5.0      later_1.3.0      grid_4.0.5       nlme_3.1-157    
+[45] jsonlite_1.8.0   gtable_0.3.0     lifecycle_1.0.1  DBI_1.1.2       
+[49] git2r_0.30.1     magrittr_2.0.2   scales_1.1.1     cli_3.2.0       
+[53] stringi_1.7.6    vroom_1.5.7      farver_2.1.0     fs_1.5.2        
+[57] promises_1.2.0.1 xml2_1.3.3       bslib_0.3.1      ellipsis_0.3.2  
+[61] generics_0.1.2   vctrs_0.3.8      tools_4.0.5      bit64_4.0.5     
+[65] glue_1.6.2       hms_1.1.1        parallel_4.0.5   fastmap_1.1.0   
+[69] yaml_2.3.5       colorspace_2.0-3 rvest_1.0.2      knitr_1.38      
+[73] haven_2.4.3      sass_0.4.1      </code></pre>
 </div>
 </div>
 </div>
