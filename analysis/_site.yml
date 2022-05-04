@@ -1,12 +1,16 @@
 name: myproject
 output_dir: ../docs
 navbar:
-  title: myproject
+  title: Alex's Project Lot
   left:
   - text: Home
     href: index.html
   - text: About
     href: about.html
+  - text: Analysis
+    href: first-analysis.html
+  - text: Cattail Harvest Project
+    href: Cattail_Harvest_Project.html
   - text: License
     href: license.html
   right:

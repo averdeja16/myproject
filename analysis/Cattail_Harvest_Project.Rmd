@@ -1,0 +1,45 @@
+---
+title: "Cattail Harvest Project"
+author: "averdeja16"
+date: "2022-04-13"
+output: workflowr::wflow_html
+editor_options:
+  chunk_output_type: console
+---
+
+## Introduction
+### This project focused on influencing farmers to implent harvested cattails to their soil as fertilizer. This project is meant to reduce the amount of invasive cattails as well as reduce the nutrient load that goes into the Saginaw Bay Watershed. This figure presents the effects that different treatments have on ammonium levels. 
+
+```{r Treatment Tables, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(readr)
+Treatment_Data <- read_csv("C:/Users/alex.verdeja.TNC/OneDrive - The Nature Conservancy/Desktop/Cattail_Harvest/Cattail_Harvest_Data_Visualization/Treatment_Data.csv")
+View(Treatment_Data)
+
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+Treatment_Data_L <- Treatment_Data %>%
+  pivot_longer(
+    cols=(8:11),
+    names_to = "Treatment_Type",
+    values_to = "PPM"
+  )
+
+##to create line graph for each of the treatments 
+data_subset_kcl <- Treatment_Data_L %>%
+  filter(Treatment_Type == "NH4N_KCl")
+data_subset_HW <- Treatment_Data_L %>%
+  filter(Treatment_Type == "NH4N_HW")
+data_subset_H3A <- Treatment_Data_L %>%
+  filter(Treatment_Type == "NH4N_H3A")
+data_subset_kcl
+data_subset_H3A
+data_subset_HW
+
+##ggplot
+test_1<- ggplot(data = Treatment_Data_L,aes(x=month_trt, y= PPM))+
+  geom_point(aes(group = Treatment_Type, color = Treatment_Type))+
+geom_smooth(aes(group = Treatment_Type, color = Treatment_Type))
+test_1
+```
+
