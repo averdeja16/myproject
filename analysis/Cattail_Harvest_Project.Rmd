@@ -25,21 +25,21 @@ Treatment_Data_L <- Treatment_Data %>%
     values_to = "PPM"
   )
 
-##to create line graph for each of the treatments 
-data_subset_kcl <- Treatment_Data_L %>%
-  filter(Treatment_Type == "NH4N_KCl")
-data_subset_HW <- Treatment_Data_L %>%
-  filter(Treatment_Type == "NH4N_HW")
-data_subset_H3A <- Treatment_Data_L %>%
-  filter(Treatment_Type == "NH4N_H3A")
-data_subset_kcl
-data_subset_H3A
-data_subset_HW
+#Line graph for each ammounium treatment using facet_wrap to to make side by side graphs for control and treatment 
 
-##ggplot
-test_1<- ggplot(data = Treatment_Data_L,aes(x=month_trt, y= PPM))+
-  geom_point(aes(group = Treatment_Type, color = Treatment_Type))+
-geom_smooth(aes(group = Treatment_Type, color = Treatment_Type))
-test_1
+NH4N <- Treatment_Data %>%
+  pivot_longer(
+    cols=(8:10),
+    names_to = "Treatment_Type",
+    values_to = "PPM"
+  )
+##to create line graph for each of the treatments
+
+ggplot(data=NH4N, aes(x=as.factor(month),y=PPM,group=trt2, color= trt2))+
+  facet_wrap(~Treatment_Type)+
+  geom_smooth()
+#to make two graphs with nh4n as lines, switch x and color to treatment type and facet wrap to trt2
+#facet_wrap <split up treatment and control, facet_grid 
+#theme_bw < changes the background 
 ```
 
