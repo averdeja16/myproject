@@ -377,7 +377,7 @@ div.tocify {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -386,7 +386,7 @@ div.tocify {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -395,10 +395,10 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2022-05-04
+<strong>Last updated:</strong> 2022-05-05
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>myproject/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -414,12 +414,12 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
@@ -486,16 +486,16 @@ This reproducible <a href="https://rmarkdown.rstudio.com">R Markdown</a> analysi
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree3477fc1ec24ac75983c4f558b4e68dc5f44860cctargetblank3477fc1a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/averdeja16/myproject/tree/3477fc1ec24ac75983c4f558b4e68dc5f44860cc" target="_blank">3477fc1</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree39a85c0c5921bfff93880291c3099e1c857a6e0etargetblank39a85c0a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/averdeja16/myproject/tree/39a85c0c5921bfff93880291c3099e1c857a6e0e" target="_blank">39a85c0</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree3477fc1ec24ac75983c4f558b4e68dc5f44860cctargetblank3477fc1a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomaverdeja16myprojecttree39a85c0c5921bfff93880291c3099e1c857a6e0etargetblank39a85c0a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/averdeja16/myproject/tree/3477fc1ec24ac75983c4f558b4e68dc5f44860cc" target="_blank">3477fc1</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/averdeja16/myproject/tree/39a85c0c5921bfff93880291c3099e1c857a6e0e" target="_blank">39a85c0</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -504,6 +504,9 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   analysis/Cattail_Harvest_Project.Rmd
 
 </code></pre>
 <p>
@@ -542,6 +545,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/averdeja16/myproject/39a85c0c5921bfff93880291c3099e1c857a6e0e/docs/Cattail_Harvest_Project.html" target="_blank">39a85c0</a>
+</td>
+<td>
+Jane
+</td>
+<td>
+2022-05-04
+</td>
+<td>
+knitted changes
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -604,7 +624,7 @@ Ammounium Graphs
 <h2>Introduction</h2>
 <div id="this-project-focused-on-influencing-farmers-to-implent-harvested-cattails-to-their-soil-as-fertilizer.-this-project-is-meant-to-reduce-the-amount-of-invasive-cattails-as-well-as-reduce-the-nutrient-load-that-goes-into-the-saginaw-bay-watershed.-this-figure-presents-the-effects-that-different-treatments-have-on-ammonium-levels." class="section level3">
 <h3>This project focused on influencing farmers to implent harvested cattails to their soil as fertilizer. This project is meant to reduce the amount of invasive cattails as well as reduce the nutrient load that goes into the Saginaw Bay Watershed. This figure presents the effects that different treatments have on ammonium levels.</h3>
-<p><img src="figure/Cattail_Harvest_Project.Rmd/Treatment%20Tables-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/Cattail_Harvest_Project.Rmd/Treatment%20Tables-1.png" width="672" style="display: block; margin: auto;" /><img src="figure/Cattail_Harvest_Project.Rmd/Treatment%20Tables-2.png" width="672" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">

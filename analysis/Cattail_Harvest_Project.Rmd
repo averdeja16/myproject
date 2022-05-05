@@ -37,7 +37,14 @@ NH4N <- Treatment_Data %>%
 
 ggplot(data=NH4N, aes(x=as.factor(month),y=PPM,group=trt2, color= trt2))+
   facet_wrap(~Treatment_Type)+
-  geom_smooth()
+  geom_smooth()+
+  theme_bw()
+
+ggplot(data=NH4N, aes(x=as.factor(month),y=PPM,group=Treatment_Type, color=Treatment_Type))+
+  facet_wrap(~trt2)+
+  geom_smooth()+
+  theme_bw()
+
 #to make two graphs with nh4n as lines, switch x and color to treatment type and facet wrap to trt2
 #facet_wrap <split up treatment and control, facet_grid 
 #theme_bw < changes the background 
